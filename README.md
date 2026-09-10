@@ -195,7 +195,7 @@ Returns request statistics for each external API, grouped by performance bucket.
 
 ## Running the Tests
 
-Run these from the solution root. If the server is running, use a **separate terminal** for tests — otherwise the build will fail because the server locks the output binaries.
+Run these from the solution root. If the server is running, use a **separate terminal** for tests, otherwise the build will fail because the server locks the output binaries.
 
 ```bash
 # Unit tests
@@ -203,9 +203,6 @@ dotnet test AgileActorsApiAggregator.UnitTests
 
 # Integration tests
 dotnet test AgileActorsApiAggregator.IntegrationTests
-
-# All tests
-dotnet test
 ```
 
 > The integration tests use `WebApplicationFactory` and mock all external API clients, so no real API keys or running server are required.
